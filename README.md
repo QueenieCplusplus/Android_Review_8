@@ -338,17 +338,25 @@ Intent to Activity or Context 意圖分享純文本，
      
      //使用 putExtra(), getExtra() 夾帶資料
      
-     EditText et;
-     et = fincdViewById(R.id.edit_text);
-     // et.getText().toString() or getString(et)
-     String Msg = et.getString();
-     Intent anotherIntent = new Intent(MainActivity.this, Main2Activity.class);
-     anotherIntent.putExtra("I luv android since 2018", Msg)
-     startActivity(anotherIntent);
+            EditText et;
+            et = fincdViewById(R.id.edit_text);
+            // et.getText().toString() or getString(et)
+            String Msg = et.getString();
+            Intent anotherIntent = new Intent(MainActivity.this, Main2Activity.class);
+            anotherIntent.putExtra("I luv android since 2018", msg)
+            // setResult(2, anotherIntent);
+            startActivity(anotherIntent);
      
      ------------MainActivity.java-----------------------
      
-     Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-     startActivityForResult(intent, 2)
+            // onCreate()
+            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+            startActivityForResult(intent, 2)
+            
+            // onActivityResult()
+            // if requestCode ==2
+            String msg = data.getStringExtra("");
+            txv.setText(msg)
+           
      
     https://medium.com/@skywing0527/android自學筆記-14-intent用法-範例練習-ad774d2f92ec
