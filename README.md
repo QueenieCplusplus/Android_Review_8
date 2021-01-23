@@ -280,9 +280,19 @@ Intent to Activity or Context 意圖分享純文本
     
     2. constructor has no param.
     
+    3. before instance is created, we use constructor instad to ref the members.
+    
 
     https://stackoverflow.com/questions/4506990/what-is-the-use-of-static-constructors
     
 11. android's tip (Intent 意圖)
 
+    1. 先導入模組 called androidx.core.app.ShareCompat.IntentBuilder
+    
+    2. 我們使用此模組，
+    
+    3. 因建構子無法單獨使用，故先呼叫公共類別 SharCompat 與建構子 .IntenBuilder()
+
     https://developer.android.com/reference/androidx/core/app/ShareCompat.IntentBuilder
+    
+    
