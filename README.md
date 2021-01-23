@@ -303,6 +303,8 @@ Intent to Activity or Context 意圖分享純文本
        
        from(activity: Activity): IntentBuilder is deprecated
        
+       startChooser(): void
+       
        getInetent(): Intent
        
        setSubject(subject: String): IntentBuilder
