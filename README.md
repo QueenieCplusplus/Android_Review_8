@@ -206,8 +206,9 @@ Intent to Activity or Context 意圖分享純文本
             
                  // TODO
                  // for-in loop
-                 // use the data class called allGraminWatch 
-            
+                 // use the data class called allGramin3C
+                 // retrieve the gramin3C data by creating a varibale calling allGramin3C[0]
+                 // see Anroid_Review_7
             
             } 
             
