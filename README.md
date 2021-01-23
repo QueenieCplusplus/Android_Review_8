@@ -103,10 +103,10 @@ Intent to Activity or Context 意圖分享純文本
 6. to create a R.string which is located in file called string.xml under dir res/values/.
 
        <resources>
-           <string name="app_name">Dessert Clicker</string>
+           <string name="app_name">Kates App</string>
            <string name="dollar_sign">$</string>
            <string name="zero">0</string>
-           <string name="dessert_sold">Desserts Sold</string>
+           <string name="garmin">Garmin Watch</string>
            <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
            <string name="share">Share</string>
            <string name="sharing_not_available">Sharing Not Available</string>
