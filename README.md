@@ -309,6 +309,7 @@ Intent to Activity or Context 意圖分享純文本，
        setStream(@Nullable streamUri: Uri?): IntentBuilder
        
        // HTML markup
+       
        setHtmlText(@Nullable htmlText: String?): IntentBuilder 
        
        ------------------------------------------------------------------
