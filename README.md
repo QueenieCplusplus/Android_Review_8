@@ -1,5 +1,5 @@
 # Android_Review_8
-Intent to Activity or Context 意圖分享純文本
+Intent to Activity or Context 意圖分享純文本，
 使用 IntentBuilder 取代 Intent
 
 
