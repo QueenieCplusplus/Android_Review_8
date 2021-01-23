@@ -267,6 +267,9 @@ Intent to Activity or Context 意圖分享純文本
    
 9. today's tip (field)
 
-   %1$d
+   %1$d , the first filed that holds integer type variable
+   %2$s , the second field that holds string type varibale
    
    https://stackoverflow.com/questions/3656371/is-it-possible-dynamically-to-add-string-to-string-xml-in-android
+   
+   https://blog.csdn.net/wufen1103/article/details/7846691
