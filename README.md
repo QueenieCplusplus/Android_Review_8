@@ -285,7 +285,11 @@ Intent to Activity or Context 意圖分享純文本
 
     https://stackoverflow.com/questions/4506990/what-is-the-use-of-static-constructors
     
-11. android's tip (Intent 意圖)
+11. today's tip (CharSequence & String)
+
+    https://stackoverflow.com/questions/3600635/what-is-the-difference-between-charsequence-and-a-string
+    
+12. android's tip (Intent 意圖)
 
     1. 先導入模組 androidx.core.app.ShareCompat.IntentBuilder。
     
