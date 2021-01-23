@@ -268,3 +268,5 @@ Intent to Activity or Context 意圖分享純文本
 9. today's tip (field)
 
    %1$d
+   
+   https://stackoverflow.com/questions/3656371/is-it-possible-dynamically-to-add-string-to-string-xml-in-android
