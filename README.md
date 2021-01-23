@@ -292,7 +292,7 @@ Intent to Activity or Context 意圖分享純文本，
 
     https://stackoverflow.com/questions/3600635/what-is-the-difference-between-charsequence-and-a-string
     
-12. android's tip (Intent 意圖)
+12. android's tip (IntentBuiler 意圖建構器)
 
     1. 先導入模組 androidx.core.app.ShareCompat.IntentBuilder。
     
@@ -331,3 +331,9 @@ Intent to Activity or Context 意圖分享純文本，
       https://developer.android.com/reference/kotlin/androidx/core/app/ShareCompat.IntentBuilder
     
     
+13. android's tip (Intent 意圖)
+
+     Intent anotherIntent = new Intent(MainActivity.this, Main2Activity.class);
+     startActivity(anotherIntent);
+
+    https://medium.com/@skywing0527/android自學筆記-14-intent用法-範例練習-ad774d2f92ec
