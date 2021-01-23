@@ -299,7 +299,7 @@ Intent to Activity or Context 意圖分享純文本
     
     4. 建構子成立後，可呼叫內部成員方法，如
     
-       setText(text: CharSequence): IntentBuilder
+       [x]setText(text: CharSequence): IntentBuilder
        
        setStream(streamUri: Uri): IntentBuilder
        
