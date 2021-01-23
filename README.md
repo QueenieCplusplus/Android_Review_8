@@ -334,6 +334,10 @@ Intent to Activity or Context 意圖分享純文本，
 13. android's tip (Intent 意圖)
 
      
+     ------------Main2Activity.java-------------------- 
+     
+     //使用 putExtra(), getExtra() 夾帶資料
+     
      EditText et;
      et = fincdViewById(R.id.edit_text);
      // et.getText().toString() or getString(et)
@@ -342,6 +346,9 @@ Intent to Activity or Context 意圖分享純文本，
      anotherIntent.putExtra("I luv android since 2018", Msg)
      startActivity(anotherIntent);
      
-     使用 putExtra(), getExtra() 夾帶資料
-
+     ------------MainActivity.java-----------------------
+     
+     Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+     startActivityForResult(intent, 2)
+     
     https://medium.com/@skywing0527/android自學筆記-14-intent用法-範例練習-ad774d2f92ec
