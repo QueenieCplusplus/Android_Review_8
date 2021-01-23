@@ -147,7 +147,7 @@ Intent to Activity or Context 意圖分享純文本
             
             
             // 製作資料型別
-            data class garminWatchToBuy(val)
+            // data class garminWatchToBuy(val)
             
             // create a Data Type
             // Data Class
