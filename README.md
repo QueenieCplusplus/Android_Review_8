@@ -335,5 +335,7 @@ Intent to Activity or Context 意圖分享純文本，
 
      Intent anotherIntent = new Intent(MainActivity.this, Main2Activity.class);
      startActivity(anotherIntent);
+     
+     使用 putExtra(), getExtra() 夾帶資料
 
     https://medium.com/@skywing0527/android自學筆記-14-intent用法-範例練習-ad774d2f92ec
