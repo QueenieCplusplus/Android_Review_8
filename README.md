@@ -99,8 +99,20 @@ Intent to Activity or Context 意圖分享純文本
               android:showAsAction="ifRoom"
           />
        </menu>
+       
+6. to create a R.string which is located in file called string.xml under dir res/values/.
 
-6. source line of code.
+       <resources>
+           <string name="app_name">Dessert Clicker</string>
+           <string name="dollar_sign">$</string>
+           <string name="zero">0</string>
+           <string name="dessert_sold">Desserts Sold</string>
+           <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
+           <string name="share">Share</string>
+           <string name="sharing_not_available">Sharing Not Available</string>
+       </resources>
+
+7. source line of code.
 
        package com.example.android.katesapp
        
@@ -249,6 +261,6 @@ Intent to Activity or Context 意圖分享純文本
        }
 
 
-7. today's tip (getString())
+8. today's tip (getString())
 
    https://cloud.tencent.com/developer/ask/72642
