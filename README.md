@@ -1,6 +1,6 @@
 # Android_Review_8
 Intent to Activity or Context 意圖分享純文本
-使用 IntentBuilder 取代 
+使用 IntentBuilder 取代 Intent
 
 
 1. design layout with UI element. And add on Guideline to make a space between ImageView & ImageButton.
