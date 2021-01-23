@@ -1,5 +1,5 @@
 # Android_Review_8
-Intent to Activity or Context
+Intent to Activity or Context 意圖分享純文本
 
 
 1. design layout with UI element. And add on Guideline to make a space between ImageView & ImageButton.
@@ -113,7 +113,7 @@ Intent to Activity or Context
        import com.example.android.katesapp.databinding.ActivityMainBinding
        
        [intent module]
-       
+       import androidx.core.app.ShareCompat
        
        [system error handler module]
        import android.content.ActivityNotFoundException
@@ -220,17 +220,22 @@ Intent to Activity or Context
             
             }
             
-            // TODO
+            // ShareCompat is a public class
+            // its IntentBuilder is a constructor
+            // then call its methods and properties
+            // Intent 
             // Exception Handler
             private fun showGarmin() {
             
-            
-                 // wait to define
-                 val showIntent = 
+                 // Intent
+                 // setText(CharSequence text) 
+                 // Set the literal text data to be sent as part of the share.
+                 // Question on R.string.share_text
+                 val showIntent = ShareCompat.IntentBuilder.from(this).setText(getString(R.string.share_text, price, volumn)).setType("text/plain").intent
                  
                  try {
                  
-                     showIntent()
+                     startActivity(showIntent)
                  
                  } catch(ex: ActivityNotFoundException) {
                  
@@ -242,3 +247,8 @@ Intent to Activity or Context
                    
        
        }
+
+
+7. today's tip (getString())
+
+   https://cloud.tencent.com/developer/ask/72642
