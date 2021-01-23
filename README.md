@@ -325,10 +325,8 @@ Intent to Activity or Context 意圖分享純文本，
        
        setEmailTo(@Nullable addressess: Array<String>?): IntentBuilder
        
-     
-       
-       
-
-    hhttps://developer.android.com/reference/kotlin/androidx/core/app/ShareCompat.IntentBuilder
+       ------------------------------------------------------------------
+      
+      https://developer.android.com/reference/kotlin/androidx/core/app/ShareCompat.IntentBuilder
     
     
