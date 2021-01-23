@@ -333,7 +333,13 @@ Intent to Activity or Context 意圖分享純文本，
     
 13. android's tip (Intent 意圖)
 
+     
+     EditText et;
+     et = fincdViewById(R.id.edit_text);
+     // et.getText().toString() or getString(et)
+     String Msg = et.getString();
      Intent anotherIntent = new Intent(MainActivity.this, Main2Activity.class);
+     anotherIntent.putExtra("I luv android since 2018", Msg)
      startActivity(anotherIntent);
      
      使用 putExtra(), getExtra() 夾帶資料
