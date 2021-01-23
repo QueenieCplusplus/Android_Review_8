@@ -273,3 +273,16 @@ Intent to Activity or Context 意圖分享純文本
    https://stackoverflow.com/questions/3656371/is-it-possible-dynamically-to-add-string-to-string-xml-in-android
    
    https://blog.csdn.net/wufen1103/article/details/7846691
+   
+10. today's tip (constructor)
+
+    1. constructor can't be called directly.
+    
+    2. constructor has no param.
+    
+
+    https://stackoverflow.com/questions/4506990/what-is-the-use-of-static-constructors
+    
+11. android's tip (Intent 意圖)
+
+    https://developer.android.com/reference/androidx/core/app/ShareCompat.IntentBuilder
