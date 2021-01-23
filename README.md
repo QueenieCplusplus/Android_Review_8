@@ -264,3 +264,7 @@ Intent to Activity or Context 意圖分享純文本
 8. today's tip (getString())
 
    https://cloud.tencent.com/developer/ask/72642
+   
+9. today's tip (field)
+
+   %1$d
