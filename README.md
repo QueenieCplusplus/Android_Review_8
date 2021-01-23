@@ -243,7 +243,8 @@ Intent to Activity or Context 意圖分享純文本
                  // Intent
                  // setText(CharSequence text) 
                  // Set the literal text data to be sent as part of the share.
-                 // Question on R.string.share_text
+                 // Question on getIntent() instead of .intent
+                 
                  val showIntent = ShareCompat.IntentBuilder.from(this).setText(getString(R.string.share_text, price, volumn)).setType("text/plain").intent
                  
                  try {
@@ -302,11 +303,11 @@ Intent to Activity or Context 意圖分享純文本
     
        setText(text: CharSequence): IntentBuilder
        
-       setStream(streamUri: Uri): IntentBuilder
+       setStream(@NonNull streamUri: Uri): IntentBuilder
        
        setType(mimeType: String): IntentBuilder
        
-       from(activity: Activity): IntentBuilder is deprecated
+       from(@NonNull activity: Activity): IntentBuilder
        
        startChooser(): void
        
@@ -314,15 +315,15 @@ Intent to Activity or Context 意圖分享純文本
        
        setSubject(subject: String): IntentBuilder
        
-       setEmailBcc(addresses: String[]): IntentBuilder
+       setEmailBcc(@NonNull addresses: String[]): IntentBuilder
        
-       setEmailTo(addressess: String[]): IntentBuilder
+       setEmailTo(@NonNull addressess: String[]): IntentBuilder
        
        // HTML markup
        setHtmlText(htmlText: String): IntentBuilder 
        
        
 
-    https://developer.android.com/reference/androidx/core/app/ShareCompat.IntentBuilder
+    hhttps://developer.android.com/reference/kotlin/androidx/core/app/ShareCompat.IntentBuilder
     
     
