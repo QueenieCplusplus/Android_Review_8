@@ -287,11 +287,34 @@ Intent to Activity or Context 意圖分享純文本
     
 11. android's tip (Intent 意圖)
 
-    1. 先導入模組 called androidx.core.app.ShareCompat.IntentBuilder
+    1. 先導入模組 androidx.core.app.ShareCompat.IntentBuilder。
     
-    2. 我們使用此模組，
+    2. 我們使用此模組，目的是建造一個 IntentBuilder 的型別的實例。
     
-    3. 因建構子無法單獨使用，故先呼叫公共類別 SharCompat 與建構子 .IntenBuilder()
+    3. 因建構子無法單獨使用，故先呼叫公共類別 SharCompat 與建構子 .IntenBuilder。
+    
+    4. 建構子成立後，可呼叫內部成員方法，如
+    
+       setText(text: CharSequence): IntentBuilder
+       
+       setStream(streamUri: Uri): IntentBuilder
+       
+       setType(mimeType: String): IntentBuilder
+       
+       from(activity: Activity): IntentBuilder is deprecated
+       
+       getInetent(): Intent
+       
+       setSubject(subject: String): IntentBuilder
+       
+       setEmailBcc(addresses: String[]): IntentBuilder
+       
+       setEmailTo(addressess: String[]): IntentBuilder
+       
+       // HTML markup
+       setHtmlText(htmlText: String): IntentBuilder 
+       
+       
 
     https://developer.android.com/reference/androidx/core/app/ShareCompat.IntentBuilder
     
