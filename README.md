@@ -301,11 +301,16 @@ Intent to Activity or Context 意圖分享純文本
     
     4. 建構子成立後，可呼叫內部成員方法，如
     
-       setText(text: CharSequence): IntentBuilder
+       setText(@Nullable text: CharSequence?): IntentBuilder
        
-       setStream(@NonNull streamUri: Uri): IntentBuilder
+       setType(@Nullable mimeType: String?): IntentBuilder
        
-       setType(mimeType: String): IntentBuilder
+       setStream(@Nullable streamUri: Uri?): IntentBuilder
+       
+       // HTML markup
+       setHtmlText(@Nullable htmlText: String?): IntentBuilder 
+       
+       ------------------------------------------------------------------
        
        from(@NonNull activity: Activity): IntentBuilder
        
@@ -313,14 +318,13 @@ Intent to Activity or Context 意圖分享純文本
        
        getInetent(): Intent
        
-       setSubject(subject: String): IntentBuilder
+       setSubject(@Nullable subject: String?): IntentBuilder
        
-       setEmailBcc(@NonNull addresses: String[]): IntentBuilder
+       setEmailBcc(@Nullable addresses: Array<String>?): IntentBuilder
        
-       setEmailTo(@NonNull addressess: String[]): IntentBuilder
+       setEmailTo(@Nullable addressess: Array<String>?): IntentBuilder
        
-       // HTML markup
-       setHtmlText(htmlText: String): IntentBuilder 
+     
        
        
 
